@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e2e2e; /* Dark background */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #ffffff; /* Light text */
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #ffa500; /* Bright orange */
+    margin-bottom: 20px;
+}
+
+.halloween-graphic {
+    width: 150px; /* Adjust size as needed */
+    animation: float 2s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff4500; /* Bright orange */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+button:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+}

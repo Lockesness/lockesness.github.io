@@ -33,7 +33,7 @@ function stopBackgroundMusic() {
 yesButton.addEventListener('click', () => {
     stopBackgroundMusic(); // Stop background music
     question.textContent = "Yay! 🎉";
-    ghost.src = "images/blush-smile.png"; // Change the ghost to a smiley face
+    ghost.src = "/images/blush-smile.png"; // Change the ghost to a smiley face
     yesSound.play(); // Play the sound for Yes button
     yesButton.classList.add('enlarging'); // Enlarge the Yes button
     noButton.classList.add('shrinking'); // Shrink the No button

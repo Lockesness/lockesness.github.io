@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Invitation To Uyen 😄</title>
     <link rel="stylesheet" href="style.css">
-    <title>Halloween Invitation!</title>
 </head>
 <body>
     <div class="container">
-        <h1>Will you be my Halloween Boo?</h1>
-        <img id="main-graphic" src="/images/cute-ghost.png" alt="Cute Ghost" class="halloween-graphic">
+        <h1 id="question">Will you be my Halloween Boo?</h1>
+
+        <!-- Ghost Image (floating) -->
+        <img id="ghost" src="images/cute-ghost.png" alt="Floating ghost" class="halloween-graphic">
+
+        <!-- Buttons -->
         <div class="buttons">
-            <button id="yes-button" class="accept-button">Yes 🎉</button>
-            <button id="no-button" class="decline-button">No 👻</button>
+            <button id="yes-button">Yes</button>
+            <button id="no-button">No</button>
         </div>
-        <div id="message" class="message"></div>
+
+        <!-- Play/Pause Button for Background Music -->
+        <button id="play-pause-button" class="play-button">Play</button>
     </div>
+
+    <!-- Spooky Background Music -->
+    <audio id="spooky-music" loop>
+        <source src="audio/Background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Sound for Yes Button -->
+    <audio id="yes-sound">
+        <source src="audio/Celebrate.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Sound for No Button -->
+    <audio id="no-sound">
+        <source src="audio/Boo.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="script.js"></script>
 </body>
 </html>
